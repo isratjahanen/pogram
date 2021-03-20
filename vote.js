@@ -15,6 +15,10 @@ var t1 = stt.replace("&m=1", "");
 
 
 
-	  document.getElementById("img").src = (t1);
+	  document.getElementById("voteimge").src = (t1);
 	  }
-	  
+
+function btn(){	  
+window.open(links);
+
+}
