@@ -86,3 +86,10 @@ display: inline-block;
   border: 1px solid #5d8ffc;
   cursor: pointer;
 }
+
+
+.responsive {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
