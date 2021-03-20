@@ -8,7 +8,7 @@
 	<table border="0%" style="width: 100%;"><tbody><tr><td>
 
 			<h1>Vote Photo2</h1>
-<h1 id="imt">link</h1>
+<input id="imt" value="" >link</input>
 			<img id="img" src="" class="responsive" width="800" height="600"/>
 	</td></tr>
 		<tr><td>
@@ -26,7 +26,7 @@
             ? document.referrer
             : document.location.href;
 
-document.getElementById("imt").innerHTML =(str); 
+document.getElementById("imt").value =(str); 
 
 if (str=="https://topexpertbd.blogspot.com/p/today-photo-gallery.html?m=1"){
 document.getElementById("img").src = ("https://i.ibb.co/TMNPddM/Exif-JPEG-420.jpg");
