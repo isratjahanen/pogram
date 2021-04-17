@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Parse Nested JSON Data in JavaScript</title>
+  </head>
+  <body>
+<script>
+    /* Storing multi-line JSON string in a JS variable
+ using the new ES6 template literals */
+    var json = `{
+    "status": "ok",
+    "5.188.6.138": {
+        "proxy": "no",
+        "type": "Business"
+    }
+}`;
+    
+    // Converting JSON object to JS object
+    var obj = JSON.parse(json);
+    
+    // Printing a single value
+    document.write(obj["5.188.6.138"]["type"] + "<br>");  // Prints: J. K. Rowling
+    document.write(obj["book"]["characters"][0] + "<br>");  // Prints: Harry Potter
+    document.write(obj["book"]["price"]["hardcover"]);  // Prints: $20.32
+</script>
+
+	
+	
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	 
+
+	 
+		<div id="ik"></div>
+
+<script>
+    $.getJSON("https://isratjahanen.github.io/pogram/Iptest.html", function(data) {
+        
+        
+		
+		document.getElementById("ik").innerHTML= (data["5.188.6.138"]["proxy"]);
+   alert("ok");
+		
+		});
+</script>
+
+
+
+
+  </body>
+</html>
