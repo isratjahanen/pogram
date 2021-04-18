@@ -37,11 +37,11 @@
 
 <script>
   
-    $.getJSON("http://ipinfo.io/?token=652d1806759887", function(data) {
+    $.getJSON("https://geo.ipify.org/api/v1?apiKey=at_YxSccMuHeBCJVhd3C6wf9j4HeQZi3", function(data) {
         
         
 		
-		document.getElementById("ik").innerHTML= (data["privacy"]["vpn"]);
+		document.getElementById("ik").innerHTML= (data["proxy"]["vpn"]);
    alert("ok");
 		
 		});
