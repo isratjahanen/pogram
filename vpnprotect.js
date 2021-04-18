@@ -27,7 +27,7 @@ window.onload = function () {
         
         var result = (data["privacy"]["vpn"]);
 		
-		document.getElementById("ik").innerHTML= (result);
+		document.getElementById("ikresult").innerHTML= (result);
 		
 		if (result == true){
 		document.getElementById("myNav").style.width = "100%";
