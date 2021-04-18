@@ -31,7 +31,7 @@ window.onload = function () {
 	function docalls(){
 	
 	document.getElementById("myNavs").style.width = "0%";
-	
+	alert("hok");
 	
 	}	
 		
