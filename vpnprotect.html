@@ -1,15 +1,54 @@
-<p id="ip">hkh</p>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Parse Nested JSON Data in JavaScript</title>
+  </head>
+  <body>
+	
+	
+<script>
+    /* Storing multi-line JSON string in a JS variable
+ using the new ES6 template literals */
+    var json = `{
+    "status": "ok",
+    "5.188.6.138": {
+        "proxy": "no",
+        "type": "Business"
+    }
+}`;
+    
+    // Converting JSON object to JS object
+    var obj = JSON.parse(json);
+    
+    // Printing a single value
+    document.write(obj["5.188.6.138"]["type"] + "<br>");  // Prints: J. K. Rowling
+    document.write(obj["book"]["characters"][0] + "<br>");  // Prints: Harry Potter
+    document.write(obj["book"]["price"]["hardcover"]);  // Prints: $20.32
+</script>
+
+	
+	
+		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	 
+
+	 
+		<div id="ik"></div>
 
 <script>
-  window.onload = function () {
-        var scripte= document.createElement("script");
-        scripte.type = "text/javascript";
-        scripte.src = "http://ipinfo.io/?callback=getIP";
-        document.getElementsByTagName("head")[0].appendChild(scripte);
+  
+    $.getJSON("http://ipinfo.io/?token=652d1806759887", function(data) {
+        
+        
 		
-    };
-    function getIP(response) {
-        document.getElementById("ip").innerHTML = (response.ip);
-    }
- 
+		document.getElementById("ik").innerHTML= (data["privacy"]["vpn"]);
+   alert("ok");
+		
+		});
 </script>
+
+
+
+
+  </body>
+</html>
