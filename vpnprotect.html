@@ -1,14 +1,15 @@
 <p id="ip">hh</p>
 
 <script>
-  
   window.onload = function () {
-var scripte= document.createElement("script");
-scripte.type = "text/javascript";
-scripte.src = "http://ipinfo.io/?callback=callback&token=652d1806759887";
-document.getElementsByTagName("head")[0].appendChild(scripte);
-
-};
-function callback(response) {
-document.getElementById("ip").innerHTML = (response.ip);
-}</script>
+        var scripte= document.createElement("script");
+        scripte.type = "text/javascript";
+        scripte.src = "https://api.ipify.org?format=jsonp&callback=DisplayIP";
+        document.getElementsByTagName("head")[0].appendChild(scripte);
+		
+    };
+    function DisplayIP(response) {
+        document.getElementById("ip").innerHTML = (response.ip);
+    }
+ 
+</script>
