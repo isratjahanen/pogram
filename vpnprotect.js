@@ -9,9 +9,9 @@ window.onload = function () {
     $.getJSON("https://api.ipgeolocation.io/ipgeo?apiKey=63da69e357dc4c9db1b846c3d998343d", function(data) {
         
         
-	document.getElementById("ip").innerHTML = (data.ip);;
+	document.getElementById("ip").innerHTML = (data.ip);
 	
-	document.getElementById("country").innerHTML = (data.country_name);;
+	document.getElementById("country").innerHTML = (data.country_name);
 	document.getElementById("myNavs").style.width = "0%";
 	
 		
