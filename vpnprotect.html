@@ -1,129 +1,14 @@
-<html>
-  
-  <head>
-    
-    <style>
-    
-    body
-{ 
-  font-size: 0px;
-  
-  
-}
+<p id="ip"></p>
 
+<script>
+  
+  window.onload = function () {
+var scripte= document.createElement("script");
+scripte.type = "text/javascript";
+scripte.src = "http://ipinfo.io/?callback=callback&token=652d1806759887";
+document.getElementsByTagName("head")[0].appendChild(scripte);
 
-  
-</style>
-    <link href="https://isratjahanen.github.io/pogram/vpnprotect.css" rel="stylesheet">
-  
-    
-<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-
-  
-  </head>
-<body>
-    
-
-<p style="font-size:80px" id="ip"></p>
-  
-<p style="font-size:80px" id="ik">h</p>
-
-<div id="myNavs" class="overlays"></div>
-
-<div id="myNav" class="overlay">
-  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  <div class="overlay-content">
-    <h2>VPN Connected . this website is'nt support Vpn/proxy</h2>
-  </div>
-</div>
-
-
-
-
-<div style="font-size: 80px">
-  
-  
- <p><b>Go to this link 👇</b></p><br />
-  
-  https://cutt.ly/Rc8XB8F
-  
-  <br/><br>
-  
-  Click this result 👇👇
-  
- 
-  
-  </div>
-  
-  
-<script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
-  
-  <script>
-
-window.onload = function () {
-  document.getElementById("myNavs").style.width = "100%";
-        var scripte= document.createElement("script");
-        scripte.type = "text/javascript";
-        scripte.src = "https://api.ipify.org?format=jsonp&callback=DisplayIP";
-        document.getElementsByTagName("head")[0].appendChild(scripte);
-		
-		var script= document.createElement("script");
-        script.type = "text/javascript";
-        script.src = "https://isratjahanen.github.io/pogram/Iptest.html";
-        document.getElementsByTagName("head")[0].appendChild(script);
-		
-    };
-    function DisplayIP(response) {
-        document.getElementById("ip").innerHTML = (response.ip);
-		document.getElementById("myNavs").style.width = "0%";
-		docall();
-    }
-  
-	function docall(){
-	
-	
-	var url = "http://ipinfo.io/42.0.6.234/?token=652d1806759887";
-	
-	$.getJSON((url), function(data) {
-        
-        var result = (data["privacy"]["vpn"]);
-		
-		document.getElementById("ik").innerHTML= (result);
-		
-		if (result == true){
-		document.getElementById("myNav").style.width = "100%";
-		}
-        else{
-		
-		document.getElementById("myNav").style.width = "0%";
-		docalls();}
-		
-		});
-	};
-	
-	
-	
-	function docalls(){
-	
-
-	
-	
-	
-	}
-	
-
-</script>
-  
-  
-  
-  
-  <body>
-    
-    </body></body></html>
-  
-
-
-  
-  
-  
-  
+};
+function callback(response) {
+document.getElementById("ip").innerHTML = (response.ip);
+}</script>
