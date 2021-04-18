@@ -1,14 +1,14 @@
-<p id="ip">hh</p>
+<p id="ip">hkh</p>
 
 <script>
   window.onload = function () {
         var scripte= document.createElement("script");
         scripte.type = "text/javascript";
-        scripte.src = "https://api.ipify.org?format=jsonp&callback=DisplayIP";
+        scripte.src = "http://ipinfo.io/?callback=getIP";
         document.getElementsByTagName("head")[0].appendChild(scripte);
 		
     };
-    function DisplayIP(response) {
+    function getIP(response) {
         document.getElementById("ip").innerHTML = (response.ip);
     }
  
