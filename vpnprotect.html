@@ -5,23 +5,23 @@
     <title>Parse Nested JSON Data in JavaScript</title>
   </head>
   <body>
-	
-	
 
-	
-		<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-	 
 
-	 
-		<div id="ik">gg</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+
+
+
+	<div id="ik"></div>
 
 <script>
   
-    $.getJSON("http://ipinfo.io/?token=652d1806759887", function(data) {
+    $.getJSON("https://api.ipgeolocation.io/ipgeo?apiKey=63da69e357dc4c9db1b846c3d998343d", function(data) {
         
         
 		
-		document.getElementById("ik").innerHTML= (data["privacy"]["hosting"]);
+		document.getElementById("ik").innerHTML= (data["time_zone"]["is_dst"]);
    alert("ok");
 		
 		});
