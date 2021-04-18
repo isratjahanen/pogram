@@ -19,14 +19,15 @@ window.onload = function () {
   
 	function docall(){
 	
+	var sip = document.getElementById("ip").innerHTML;
 	
-	var url = "http://ipinfo.io/42.0.6.234\?token=652d1806759887";
+	var url = "http://ipinfo.io/"+(sip)+"/?token=652d1806759887";
 	
 	$.getJSON((url), function(data) {
         
         var result = (data["privacy"]["vpn"]);
 		
-		document.getElementById("ikresult").innerHTML= (result);
+		document.getElementById("ik").innerHTML= (result);
 		
 		if (result == true){
 		document.getElementById("myNav").style.width = "100%";
@@ -48,3 +49,4 @@ window.onload = function () {
 	
 	
 	}
+	
