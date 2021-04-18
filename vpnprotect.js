@@ -25,7 +25,7 @@ window.onload = function () {
 	else{
 
 	document.getElementById("myNav").style.width = "0%";
-	docalls();}
+	}
 		
 		
 		
