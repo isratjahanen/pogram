@@ -1,0 +1,59 @@
+<html>
+
+<head>
+
+  
+  
+  <link href='https://isratjahanen.github.io/pogram/vpnprotect.css' rel='stylesheet'/>
+  
+</head>
+<body>
+ <p id='ip' style='font-size:30px'/>
+  
+<p id='ik' style='font-size:30px'/>
+
+	<p id='country' style='font-size:30px'/>
+	
+	<p id='mass'>ppp</p>
+  
+ <div class='overlays' id='myNavs'/>
+
+<div class='overlay' id='myNav'>
+  <a class='closebtn' href='javascript:void(0)' onclick='closeNav()'>X</a>
+  <div class='overlay-content'>
+    <h2>VPN Connected . this website is&#39;nt support Vpn/proxy</h2>
+  </div>
+</div> 
+
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.5.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script>
+
+docalls();
+
+  
+		
+	function docalls(){
+	
+	
+	$.ajax({
+    url: 'https://api.ipgeolocation.io/ipgeo?apiKey=63da69e357dc4c9db1b846c3d998343d',
+    dataType: 'json',
+    success: function( data ) {
+      alert( "SUCCESS:  " + data );
+    },
+    error: function( data ) {
+      alert( "ERROR:  " + data );
+    }
+  });
+	
+	alert('hi');
+	
+	
+	}	
+			
+		</script>
+		
+		</body>
+		
+		</html>
