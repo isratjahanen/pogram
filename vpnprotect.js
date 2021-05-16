@@ -1,8 +1,9 @@
+document.getElementById("myNavs").style.width = "100%";
 
-	document.getElementById("myNavs").style.width = "100%";
+
 	
 	
-    $.getJSON("https://api.ipgeolocation.io/ipgeo?apiKey=63da69e357dc4c9db1b846c3d998343d", function(data) {
+    $.getJSON("https://api.ipgeolocation.io/ipgeo?apiKey=18443ceaaeda44f9b189c3b72ef5f18f", function(data) {
         
         
 	document.getElementById("ip").innerHTML = (data.ip);
